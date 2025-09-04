@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdelrhman Elyamny Moawad - Personal Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="more.css">
+</head>
+<body>
+    <!-- Navigation Buttons -->
+    <nav>
+        <div class="nav-content">
+            <h1 class="logo"><a href="index.html">Abdelrhman Elyamny Moawad</a></h1>
+            <ul class="nav-links">
+                <li><a href="#education" class="custom-button">Education</a></li>
+                <li><a href="#certificates" class="custom-button">Certificates</a></li>
+                <li><a href="#projects" class="custom-button">Projects</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Education Section -->
+    <section id="education">
+        <div class="container">
+            <div class="text-content">
+                <div>
+                    <h1 class="Education">Read More About My Journey</h1>
+                    <details>
+                        <summary class="summary">Click to read more</summary>
+                        <br>
+                        <p>
+                            I am Abdelrhman Elyamny, a third-year Information Systems student at Tanta University, passionate about software development
+                            and data science. I have experience in Python, C++, SQL Server, OOP, Data Structures, Git, and GitHub.
+                        </p>
+                        <br>
+                        <p>
+                            I am committed to continuous learning and professional growth, striving to make a meaningful impact
+                            in software engineering and data science.
+                        </p>
+                    </details>
+                </div>
+                <br>
+                <h1 class="Education">Education</h1><br>
+                <h2 style="font-weight: normal; margin: 0; padding: 0;"><pre>I'm a Semi Senior Student Information Systems Engineering student at Tanta University, passionate about data science,
+web development, and problem-solving. My studies focus on honing technical and analytical skills,
+and I actively engage in projects and workshops to bridge the gap between theory and practical application,
+preparing me for real-world challenges.
+                </pre></h2>
+                <h2>Skills from University</h2>
+                <div class="skills-grid">
+                    <div class="skill-card" data-icon="fa-python"><span>Python</span></div>
+                    <div class="skill-card"><span>C++</span><i class="icon">C++</i></div>
+                    <div class="skill-card" data-icon="fa-java"><span>Java</span></div>
+                    <div class="skill-card" data-icon="fa-git-alt"><span>Git</span></div>
+                    <div class="skill-card" data-icon="fa-github"><span>GitHub</span></div>
+                    <div class="skill-card"><span>Teamwork</span><i class="icon">Teamwork</i></div> 
+                    <div class="skill-card"><span>Leadership</span><i class="icon">Leadership</i></div> 
+                    <div class="skill-card"><span>SQL</span><i class="icon">SQL</i></div> 
+                    <div class="skill-card"><span>OOP</span><i class="icon">OOP</i></div> 
+                    <div class="skill-card"><span>Data Structure</span><i class="icon">DSA</i></div> 
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Education skills script -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.querySelectorAll(".skill-card").forEach(card => {
+                const iconClass = card.getAttribute("data-icon");
+                if (iconClass) {
+                    const icon = document.createElement("i");
+                    icon.classList.add("fab", iconClass);
+                    card.appendChild(icon);
+                }
+            });
+        });
+    </script>
+
+    <!-- Certificates Section -->
+    <section id="certificates">
+        <div class="container">
+            <h2 class="Certificates">Certificates</h2><br> 
+            <div class="certificates-grid">
+        <!--  -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h2 class="Projects">Projects</h2><br>
+            <div class="projects-grid">
+                <!--  -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Abdelrhman Elyamny Moawad. All rights reserved.</p>
+    </footer>
+
+    <!-- JS Files -->
+    <script src="main.js"></script>
+    <script src="more.js"></script>
+</body>
+</html>
